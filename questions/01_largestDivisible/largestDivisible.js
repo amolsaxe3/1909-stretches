@@ -12,10 +12,8 @@ function largestDivisible(arr, num) {
 return arr.reduce((acc, cur) => {
     if(cur%num === 0 && cur > acc){
         acc = cur
-    }
+    }    
     if (acc === null) {acc = null}
-
-    console.log ('acc-->',acc)
     return acc
 },null)
 }
