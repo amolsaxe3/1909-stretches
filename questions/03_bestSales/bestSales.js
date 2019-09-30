@@ -26,6 +26,15 @@ productWhichMadeMostMoney returns an object with an id for that product and a to
 
 //write the productWhichMadeMostMoney function
 
-function bestSales(sales) {}
+function bestSales(sales) {
+
+  return sales.reduce((acc,cur)=>{
+    if(acc === undefined) return {amount: cur.id, productId: cur.productId}
+
+    if (cur.amount > acc.amount) return {amount: cur.id, productId: cur.productId}
+
+  }, {})
+
+}
 
 module.exports = { bestSales, sales };
