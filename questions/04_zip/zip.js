@@ -7,6 +7,12 @@ zip([
   {z: 2, y: 1}]) => {x: 3, y: 3, z: 3}
 */
 
-function zip(objs) {}
+function zip(objs) {
+  objs.reduce((acc, curr){
+
+   for (keys in curr)   acc.id = acc.id + curr.id
+    return acc
+  })
+}
 
 module.exports = { zip };
