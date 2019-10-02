@@ -11,7 +11,15 @@ function zip(objs) {
 
   return objs.reduce((acc, curr) => {
 
-   for (keys in curr)   acc.id = acc.id + curr.id
+   for (let key in curr){
+     if (key in acc) {
+      acc[key] = acc[key] + curr[key]
+     } else {
+      acc[key] = curr[key]
+     }
+     
+    }
+    return acc
     
   },{})
 }
