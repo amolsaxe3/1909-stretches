@@ -8,11 +8,12 @@ zip([
 */
 
 function zip(objs) {
-  objs.reduce((acc, curr){
+
+  return objs.reduce((acc, curr) => {
 
    for (keys in curr)   acc.id = acc.id + curr.id
-    return acc
-  })
+    
+  },{})
 }
 
 module.exports = { zip };
