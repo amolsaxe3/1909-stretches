@@ -16,7 +16,7 @@ const items = [
   },
 ];
 function query(arr, obj) {
-  let arrProps = obj.keys;
+  let arrProps = obj.keys();
   return arr.reduce((acc, curr) => {
 
     arrProps.forEach(elem => {
