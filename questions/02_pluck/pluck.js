@@ -21,10 +21,15 @@ function pluck(obj, elements) {
   // elements.forEach(el => {
   //   if (obj[el] !== undefined) newObj[el] = obj[el];
   // });
+
+  //obj={a:1,b:2,c:3} elements=[x,y,a]//{a:1}
   elements.forEach(element => {
-    if(obj[element]!== undefined) newObj[element] = obj[element]; 
+    if(obj[element]) 
+    newObj[element] = obj[element]; 
   });
+  console.log(newObj);
   return newObj;
 }
+pluck ({a:1,b:2,c:3},['x','y','z'])
 
 module.exports = { pluck };

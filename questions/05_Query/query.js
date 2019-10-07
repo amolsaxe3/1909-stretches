@@ -15,7 +15,21 @@ const items = [
     price: 4,
   },
 ];
+function query(arr, obj) {
+  let arrProps = obj.keys;
+  return arr.reduce((acc, curr) => {
 
+    arrProps.forEach(elem => {
+      if (elem in curr) {
+        acc.push(curr)
+      }  
+    }) 
+
+
+  },[])
+}
+
+module.exports = { query, items };
 // query(items, { name: 'foo' })
 // returns [{
 // id: 1,
@@ -44,6 +58,4 @@ const items = [
 //       price: 4,
 //   }]
 
-function query(arr, obj) {}
 
-module.exports = { query, items };

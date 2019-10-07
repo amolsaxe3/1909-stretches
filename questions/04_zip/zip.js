@@ -16,6 +16,7 @@ function zip(objs) {
       acc[key] = acc[key] + curr[key]
      } else {
       acc[key] = curr[key]
+      console.log (acc)
      }
      
     }

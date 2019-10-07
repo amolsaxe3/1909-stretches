@@ -3,8 +3,8 @@ const { pluck } = require('./pluck');
 describe('Pluck', () => {
   test('it should pluck pairs from one object and return a new object', () => {
     const obj1 = { a: 1, b: true };
-    const result = pluck(obj1, ['a']);
-    expect(result).toEqual({ a: 1 });
+    const result = pluck(obj1, []);
+    expect(result).toEqual({});
   });
 
   test('it should return a new object, and not modify the current object', () => {
