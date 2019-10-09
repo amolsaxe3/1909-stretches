@@ -1,9 +1,7 @@
 function times(x) {
+   if (typeof x !== 'number') throw 'Numbers only!';
 
-    return (y) =>{
-        if (isNaN(x)) {throw 'Numbers only!!'}
-        return x*y
-    }
+    return (y) => x*y;
 }
 
 module.exports = { times };
