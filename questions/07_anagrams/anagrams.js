@@ -9,12 +9,18 @@ const checkAnagrams = (str1, str2) => {
   }
 
   str1 = str1.split('');
+  console.log ("str1====>",str1)
   str1 = str1.sort();
+  console.log ("str1====>",str1)
   str1 = str1.join('');
+console.log ("str1====>",str1)
 
   str2 = str2.split('');
+  console.log ("str2====>",str2)
   str2 = str2.sort();
+  console.log ("str2====>",str2)
   str2 = str2.join('');
+  console.log ("str2====>",str2)
 
   if (str1 === str2) {
     isAnagram = true;
