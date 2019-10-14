@@ -4,9 +4,6 @@
 const checkAnagrams = (str1, str2) => {
   //YOUR CODE
   let isAnagram  = false;
-  if (str1 === str2) {
-    isAnagram = true;
-  }
 
   str1 = str1.split('');
   console.log ("str1====>",str1)
