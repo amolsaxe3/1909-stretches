@@ -6,6 +6,18 @@
 //  23
 //  456
 
-const floydsTriangle = n => {};
+const floydsTriangle = n => {
+
+    let str = "",prevNumber=1,i,value=20;
+for(i=0;i<value;i++){
+  str = "";j=0;
+  while(j<= i){
+        str = str + "    " + prevNumber;
+        j++;
+        prevNumber++;
+}
+console.log(str);
+}
+};
 
 module.exports = { floydsTriangle };

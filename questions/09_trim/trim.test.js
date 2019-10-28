@@ -7,6 +7,8 @@ describe('Trim', () => {
       bar: undefined,
       bazz: null,
       quq: 0,
+      cook: '',
+      oneMore: NaN,
     };
     const trimmed = trim(obj);
     expect(typeof trimmed === 'object').toBe(true);
