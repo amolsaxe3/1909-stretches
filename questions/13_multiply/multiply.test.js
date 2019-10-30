@@ -26,7 +26,7 @@ describe('multiply testing', () => {
     // test some random values
     let randomNumber1 = Math.floor(Math.random() * 100);
     let randomNumber2 = Math.floor(Math.random() * 5);
-    const results = randTimes(randomNumber1, randomNumber2);
+    const results = multiply(randomNumber1, randomNumber2);
     expect(results).toBe(randomNumber1*randomNumber1);
   });
 });
