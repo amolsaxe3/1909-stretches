@@ -8,7 +8,7 @@
 
 const floydsTriangle = n => {
 
-    let str = "",prevNumber=1,i,value=20;
+    let str = "",prevNumber=1,i,value=n;
 for(i=0;i<value;i++){
   str = "";j=0;
   while(j<= i){
@@ -16,7 +16,7 @@ for(i=0;i<value;i++){
         j++;
         prevNumber++;
 }
-console.log(str);
+//console.log(str);
 }
 };
 
