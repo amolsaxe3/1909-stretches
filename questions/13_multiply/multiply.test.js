@@ -24,9 +24,9 @@ describe('multiply testing', () => {
 
   test('it is not hardcoded (hint: use random numbers)', () => {
     // test some random values
-    let randomNumber1 = Math.floor(Math.random() * 100);
-    let randomNumber2 = Math.floor(Math.random() * 5);
+    let randomNumber1 = Math.floor(Math.random());
+    let randomNumber2 = Math.floor(Math.random());
     const results = multiply(randomNumber1, randomNumber2);
-    expect(results).toBe(randomNumber1*randomNumber1);
+    expect(results).toBe(randomNumber1, randomNumber2);
   });
 });
