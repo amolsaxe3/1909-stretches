@@ -1,14 +1,12 @@
 
-function cache(fn) {
-    let retFunc = (arg) => {
-        
-    }
-    if (typeof fn === 'function'){
- 
+function cache(cb) {
 
-        return retFunc;
+    if (typeof cb !== "function"){
+        throw new Error("Input must be a function.");
     } else {
-        throw 'Input must be a function.'
+        return  function cashedAdder(arg) {
+           return cb(arg);
+        };
     }
 
 }
