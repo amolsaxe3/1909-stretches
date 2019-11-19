@@ -3,6 +3,18 @@ SortOrder takes an array of objects, a key to be sorted on
 and a key for the return value. 
 */
 
-function sortOrder() {}
+function sortOrder(data, sortOrder, name) {
+
+    //let retArr = [];
+
+    let populateArr = [];
+    data.map (obj => {
+        populateArr.push(obj[name]);
+    })
+
+    console.log('populateArr', populateArr)
+
+    return populateArr.sort();
+}
 
 module.exports = { sortOrder };
