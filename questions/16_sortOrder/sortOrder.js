@@ -7,14 +7,21 @@ function sortOrder(data, sortOrder, name) {
 
     //let retArr = [];
 
-    let populateArr = [];
-    data.map (obj => {
-        populateArr.push(obj[name]);
+    // let populateArr = [];
+    // data.map (obj => {
+    //     populateArr.push(obj[name]);
+    // })
+
+    // console.log('populateArr', populateArr)
+
+    // return populateArr.sort();
+
+    data.sort((a, b) => {
+        return a[sortOrder] - b[sortOrder];
     })
-
-    console.log('populateArr', populateArr)
-
-    return populateArr.sort();
+        .map(element => {
+            return element[key];
+        });
 }
 
 module.exports = { sortOrder };

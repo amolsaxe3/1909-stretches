@@ -6,9 +6,13 @@ class StatefulThing {
   constructor(initialState = {}) {
     this.state = initialState;
   }
-  setState() {
+  setState(props) {
     // YOUR CODE
+
+    for (let key in props) {
+      this.state[key] = prope[key];
+    }
+
+    return this.state;
   }
 }
-
-module.exports = { StatefulThing };
