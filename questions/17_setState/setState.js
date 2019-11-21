@@ -9,9 +9,11 @@ class StatefulThing {
   setState(props) {
     // YOUR CODE
 
-    for (let key in props) {
-      this.state[key] = prope[key];
-    }
+    // for (let key in props) {
+    //   this.state[key] = prope[key];
+    // }
+
+    this.state = { ...this.state, ...props};
 
     return this.state;
   }
