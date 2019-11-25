@@ -15,3 +15,5 @@ class StatefulThing {
     return this.state;
   }
 }
+
+//got picture in camera for date 11/20/2019
