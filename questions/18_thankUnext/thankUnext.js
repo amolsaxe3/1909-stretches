@@ -16,21 +16,7 @@
 
 // YOUR CODE (intentionally blank):
 
-// class GlobalArray { 
-//     constructor(){
-//         this.array = [];
-//     }
-//     Add(item) {
-//         this.array.push(item);
-//     }
-//     Get(){
-//         return this.array;
-//     }
 
-//     next() {
-//         return console.log (this.array[i]);
-//     }
-// }
 
 Array.prototype.next = function() {
     return console.log(this[++this.current]);
