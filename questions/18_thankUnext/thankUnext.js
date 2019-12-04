@@ -19,7 +19,30 @@
 
 
 Array.prototype.next = function() {
-    return console.log(this[++this.current]);
-};
+    if(!this.nextIdx){
+        this.nextIdx = 0;
+    }
+    console.log(this[this.nextIdx]);
+    this.nextIdx +=1;
+    if(this.nextIdx >= this.length) {
+        this.nextIdx = 0;
+    };
 
-// no export statement required
+    return this;
+}
+
+// class GlobalArray { 
+//     constructor(){
+//         this.array = [];
+//     }
+//     Add(item) {
+//         this.array.push(item);
+//     }
+//     Get(){
+//         return this.array;
+//     }
+
+//     next() {
+//         return console.log(this.array[i]);
+//     }
+// }
