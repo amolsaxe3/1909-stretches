@@ -13,8 +13,10 @@ class Calculator {
         return         this.value;
     }
     divide (num) {
+        if(num!=0){
         this.value = this.value / num;
         return         this.value;
+        }
     }
 
     multiply (num) {
