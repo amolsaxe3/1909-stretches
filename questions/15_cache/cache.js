@@ -16,6 +16,8 @@ function cache(cb) {
       console.log("num as args", ...num);
       /*key is stringified*/ memo[num] = cb(...num); //function invokation each argument passed in as separate num spread
       return memo[num];
+      //adeed new comments
+      // lets try checking it in
     }
   };
 }
